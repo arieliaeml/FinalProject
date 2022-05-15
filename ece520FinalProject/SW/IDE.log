@@ -1,0 +1,133 @@
+16:26:10 INFO  : Platform repository initialization has completed.
+16:26:10 INFO  : Launching XSCT server: xsct -n  -interactive /home/arieli/ece520/ece520-finalproject/SW/temp_xsdb_launch_script.tcl
+16:26:10 INFO  : Registering command handlers for Vitis TCF services
+16:26:16 INFO  : XSCT server has started successfully.
+16:26:17 INFO  : Successfully done setting XSCT server connection channel  
+16:26:17 INFO  : Successfully done setting workspace for the tool. 
+16:26:17 INFO  : plnx-install-location is set to ''
+16:26:17 INFO  : Successfully done query RDI_DATADIR 
+16:27:51 INFO  : Result from executing command 'getProjects': traffic_gen_plaform
+16:27:51 INFO  : Result from executing command 'getPlatforms': 
+16:33:24 INFO  : Result from executing command 'removePlatformRepo': 
+16:34:29 INFO  : Result from executing command 'getProjects': traffic_gen_plaform
+16:34:29 INFO  : Result from executing command 'getPlatforms': 
+16:34:32 INFO  : Checking for BSP changes to sync application flags for project 'trafficgenn_app'...
+16:34:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:35:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:35:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF24D4A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF24D4A-13722093-0"}' command is executed.
+16:35:18 INFO  : Device configured successfully with "/home/arieli/ece520/ece520-finalproject/SW/trafficgenn_app/_ide/bitstream/trifficgenerator_wrapper.bit"
+16:37:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:37:10 INFO  : Jtag cable 'Digilent Zybo Z7 210351AF24D4A' is selected.
+16:37:10 INFO  : 'jtag frequency' command is executed.
+16:37:10 INFO  : Context for 'APU' is selected.
+16:37:10 INFO  : System reset is completed.
+16:37:13 INFO  : 'after 3000' command is executed.
+16:37:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF24D4A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF24D4A-13722093-0"}' command is executed.
+16:37:14 INFO  : Device configured successfully with "/home/arieli/ece520/ece520-finalproject/SW/trafficgenn_app/_ide/bitstream/trifficgenerator_wrapper.bit"
+16:37:14 INFO  : Context for 'APU' is selected.
+16:37:15 INFO  : Hardware design and registers information is loaded from '/home/arieli/ece520/ece520-finalproject/SW/traffic_gen_plaform/export/traffic_gen_plaform/hw/trifficgenerator_wrapper.xsa'.
+16:37:15 INFO  : 'configparams force-mem-access 1' command is executed.
+16:37:15 INFO  : Context for 'APU' is selected.
+16:37:15 INFO  : Sourcing of '/home/arieli/ece520/ece520-finalproject/SW/trafficgenn_app/_ide/psinit/ps7_init.tcl' is done.
+16:37:15 INFO  : 'ps7_init' command is executed.
+16:37:15 INFO  : 'ps7_post_config' command is executed.
+16:37:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:37:15 INFO  : The application '/home/arieli/ece520/ece520-finalproject/SW/trafficgenn_app/Debug/trafficgenn_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:37:15 INFO  : 'configparams force-mem-access 0' command is executed.
+16:37:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF24D4A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF24D4A-13722093-0"}
+fpga -file /home/arieli/ece520/ece520-finalproject/SW/trafficgenn_app/_ide/bitstream/trifficgenerator_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/arieli/ece520/ece520-finalproject/SW/traffic_gen_plaform/export/traffic_gen_plaform/hw/trifficgenerator_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/arieli/ece520/ece520-finalproject/SW/trafficgenn_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/arieli/ece520/ece520-finalproject/SW/trafficgenn_app/Debug/trafficgenn_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:37:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:37:16 INFO  : 'con' command is executed.
+16:37:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:37:16 INFO  : Launch script is exported to file '/home/arieli/ece520/ece520-finalproject/SW/trafficgenn_app_system/_ide/scripts/debugger_trafficgenn_app-default.tcl'
+16:38:48 INFO  : Disconnected from the channel tcfchan#3.
+16:38:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:38:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+16:38:58 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+16:40:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:40:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:40:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF24D4A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF24D4A-13722093-0"}' command is executed.
+16:40:40 INFO  : Device configured successfully with "/home/arieli/ece520/ece520-finalproject/SW/trafficgenn_app/_ide/bitstream/trifficgenerator_wrapper.bit"
+16:41:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:41:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF24D4A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF24D4A-13722093-0"}' command is executed.
+16:41:53 INFO  : Device configured successfully with "/home/arieli/ece520/ece520-finalproject/SW/trafficgenn_app/_ide/bitstream/trifficgenerator_wrapper.bit"
+16:42:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:42:23 INFO  : Jtag cable 'Digilent Zybo Z7 210351AF24D4A' is selected.
+16:42:23 INFO  : 'jtag frequency' command is executed.
+16:42:23 INFO  : Context for 'APU' is selected.
+16:42:23 INFO  : System reset is completed.
+16:42:26 INFO  : 'after 3000' command is executed.
+16:42:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF24D4A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF24D4A-13722093-0"}' command is executed.
+16:42:27 INFO  : Device configured successfully with "/home/arieli/ece520/ece520-finalproject/SW/trafficgenn_app/_ide/bitstream/trifficgenerator_wrapper.bit"
+16:42:27 INFO  : Context for 'APU' is selected.
+16:42:27 INFO  : Hardware design and registers information is loaded from '/home/arieli/ece520/ece520-finalproject/SW/traffic_gen_plaform/export/traffic_gen_plaform/hw/trifficgenerator_wrapper.xsa'.
+16:42:27 INFO  : 'configparams force-mem-access 1' command is executed.
+16:42:27 INFO  : Context for 'APU' is selected.
+16:42:27 INFO  : Sourcing of '/home/arieli/ece520/ece520-finalproject/SW/trafficgenn_app/_ide/psinit/ps7_init.tcl' is done.
+16:42:27 INFO  : 'ps7_init' command is executed.
+16:42:28 INFO  : 'ps7_post_config' command is executed.
+16:42:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:42:28 INFO  : The application '/home/arieli/ece520/ece520-finalproject/SW/trafficgenn_app/Debug/trafficgenn_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:42:28 INFO  : 'configparams force-mem-access 0' command is executed.
+16:42:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF24D4A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF24D4A-13722093-0"}
+fpga -file /home/arieli/ece520/ece520-finalproject/SW/trafficgenn_app/_ide/bitstream/trifficgenerator_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/arieli/ece520/ece520-finalproject/SW/traffic_gen_plaform/export/traffic_gen_plaform/hw/trifficgenerator_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/arieli/ece520/ece520-finalproject/SW/trafficgenn_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/arieli/ece520/ece520-finalproject/SW/trafficgenn_app/Debug/trafficgenn_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:42:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:42:28 INFO  : 'con' command is executed.
+16:42:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:42:28 INFO  : Launch script is exported to file '/home/arieli/ece520/ece520-finalproject/SW/trafficgenn_app_system/_ide/scripts/debugger_trafficgenn_app-default.tcl'
+16:44:26 INFO  : Disconnected from the channel tcfchan#4.

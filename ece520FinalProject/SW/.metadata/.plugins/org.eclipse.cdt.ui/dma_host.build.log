@@ -1,0 +1,7 @@
+16:17:50 **** Clean-only build of configuration Debug for project dma_host ****
+make clean 
+rm -rf  ./src/dmatest.o ./src/platform.o ./src/ps7_init.o  ./src/dmatest.d ./src/platform.d ./src/ps7_init.d  dma_host.elf.size  dma_host.elf
+ 
+
+16:17:50 Build Finished (took 582ms)
+

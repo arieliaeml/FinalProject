@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="FileSystemImportWizard">
+		<item key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
+		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID" value="false"/>
+		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="/home/arieli/ece520/ece520-finalproject/register-mode-dma/software"/>
+			<item value="/home/arieli/ece520/ece520-finalproject/SW/traffic_gen_plaform/hw"/>
+			<item value="/home/arieli/ece520/ece520-finalproject/SW/dma_platform/hw"/>
+		</list>
+	</section>
+</section>

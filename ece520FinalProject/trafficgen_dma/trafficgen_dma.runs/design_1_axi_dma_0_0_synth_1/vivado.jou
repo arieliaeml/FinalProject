@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue May 10 23:57:17 2022
+# Process ID: 18004
+# Current directory: /home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.runs/design_1_axi_dma_0_0_synth_1
+# Command line: vivado -log design_1_axi_dma_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_dma_0_0.tcl
+# Log file: /home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.runs/design_1_axi_dma_0_0_synth_1/design_1_axi_dma_0_0.vds
+# Journal file: /home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.runs/design_1_axi_dma_0_0_synth_1/vivado.jou
+# Running On: ariM, OS: Linux, CPU Frequency: 3206.494 MHz, CPU Physical cores: 2, Host memory: 8210 MB
+#-----------------------------------------------------------
+source design_1_axi_dma_0_0.tcl -notrace

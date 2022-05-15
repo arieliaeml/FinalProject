@@ -1,0 +1,9 @@
+0.7
+2020.2
+Oct 19 2021
+02:56:52
+/home/arieli/ece520/ece520-finalproject/HW/ip_repo/trafficgen_1.0/hdl/trafficgen_v1_0.v,1652247382,verilog,,/home/arieli/ece520/ece520-finalproject/HW/ip_repo/trafficgen_1.0/hdl/trafficgen_v1_0_M00_AXIS.v,,trafficgen_v1_0,,,,,,,,
+/home/arieli/ece520/ece520-finalproject/HW/ip_repo/trafficgen_1.0/hdl/trafficgen_v1_0_M00_AXIS.v,1652247451,verilog,,/home/arieli/ece520/ece520-finalproject/HW/ip_repo/trafficgen_1.0/hdl/trafficgen_v1_0_S00_AXI.v,,trafficgen_v1_0_M00_AXIS,,,,,,,,
+/home/arieli/ece520/ece520-finalproject/HW/ip_repo/trafficgen_1.0/hdl/trafficgen_v1_0_S00_AXI.v,1652247420,verilog,,/home/arieli/ece520/ece520-finalproject/HW/ip_repo/trafficgen_1.0/src/trafficgen_tb.v,,trafficgen_v1_0_S00_AXI,,,,,,,,
+/home/arieli/ece520/ece520-finalproject/HW/ip_repo/trafficgen_1.0/src/trafficgen_tb.v,1652166411,verilog,,,,trafficgen_tb,,,,,,,,
+/home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.tmp/trafficgen_v1_0_project/trafficgen_v1_0_project.sim/sim_1/behav/xsim/glbl.v,1634335545,verilog,,,,glbl,,,,,,,,

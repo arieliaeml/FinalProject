@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/arieli/ece520/ece520-finalproject/HW/ip_repo/trafficgen_1.0/hdl/trafficgen_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module trafficgen_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/arieli/ece520/ece520-finalproject/HW/ip_repo/trafficgen_1.0/hdl/trafficgen_v1_0_M00_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module trafficgen_v1_0_M00_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/arieli/ece520/ece520-finalproject/HW/ip_repo/trafficgen_1.0/hdl/trafficgen_v1_0_S00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module trafficgen_v1_0_S00_AXI
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/arieli/ece520/ece520-finalproject/HW/ip_repo/trafficgen_1.0/src/trafficgen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module trafficgen_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.tmp/trafficgen_v1_0_project/trafficgen_v1_0_project.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

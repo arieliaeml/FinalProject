@@ -1,0 +1,151 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue May 10 23:05:12 2022
+# Process ID: 12767
+# Current directory: /home/arieli/ece520/ece520-finalproject
+# Command line: vivado
+# Log file: /home/arieli/ece520/ece520-finalproject/vivado.log
+# Journal file: /home/arieli/ece520/ece520-finalproject/vivado.jou
+# Running On: ariM, OS: Linux, CPU Frequency: 2900.000 MHz, CPU Physical cores: 2, Host memory: 8210 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at /home/arieli/Documents/tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at /home/arieli/Documents/tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /home/arieli/Documents/tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.0 available at /home/arieli/Documents/tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.0/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.1 available at /home/arieli/Documents/tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.1/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.2 available at /home/arieli/Documents/tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.2/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /home/arieli/Documents/tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at /home/arieli/Documents/tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.0 available at /home/arieli/Documents/tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.0/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.1 available at /home/arieli/Documents/tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.1/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.2 available at /home/arieli/Documents/tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.2/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /home/arieli/Documents/tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at /home/arieli/Documents/tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at /home/arieli/Documents/tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+create_project trafficgen_dma ./trafficgen_dma -part xc7z010clg400-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/arieli/Documents/tools/Xilinx/Vivado/2021.2/data/ip'.
+trafficgen_dma
+set_property board_part digilentinc.com:zybo-z7-10:part0:1.0 [current_project]
+set_property  ip_repo_paths  ./ip_repo [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/arieli/ece520/ece520-finalproject/ip_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+1
+set_property  ip_repo_paths  {/home/arieli/ece520/ece520-finalproject/ip_repo /home/arieli/ece520/ece520-finalproject/HW/ip_repo} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/arieli/ece520/ece520-finalproject/ip_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/arieli/ece520/ece520-finalproject/HW/ip_repo'.
+set_property  ip_repo_paths  /home/arieli/ece520/ece520-finalproject/HW/ip_repo [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/arieli/ece520/ece520-finalproject/HW/ip_repo'.
+create_bd_design "design_1"
+Wrote  : </home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.srcs/sources_1/bd/design_1/design_1.bd> 
+INFO: [BD 41-2613] The output directory /home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.gen/sources_1/bd/design_1 for design_1 cannot be found.
+update_compile_order -fileset sources_1
+startgroup
+1
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+/processing_system7_0
+endgrou
+endgroup
+ERROR: [Common 17-149] No command group has been started; maybe undo stack has been cleared after startgroup
+set_property -dict [list CONFIG.PCW_USE_S_AXI_HP0 {1} CONFIG.PCW_USE_FABRIC_INTERRUPT {1} CONFIG.PCW_IRQ_F2P_INTR {1}] [get_bd_cells processing_system7_0]
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+startgroup
+1
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+/axi_dma_0
+endgroup
+set_property -dict [list CONFIG.c_include_sg {0} CONFIG.c_sg_include_stscntrl_strm {0} CONFIG.c_include_mm2s {0}] [get_bd_cells axi_dma_0]
+startgroup
+1
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_dma_0/S_AXI_LITE]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Slave segment '/axi_dma_0/S_AXI_LITE/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4040_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/axi_dma_0/M_AXI_S2MM} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins processing_system7_0/S_AXI_HP0]
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/axi_dma_0/Data_S2MM' at <0x0000_0000 [ 1G ]>.
+endgroup
+startgroup
+1
+create_bd_cell -type ip -vlnv user.org:user:trafficgen:1.0 trafficgen_0
+/trafficgen_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/trafficgen_0/S00_AXI} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins trafficgen_0/S00_AXI]
+Slave segment '/trafficgen_0/S00_AXI/S00_AXI_reg' is being assigned into address space '/processing_system7_0/Data' at <0x43C0_0000 [ 64K ]>.
+connect_bd_net [get_bd_pins trafficgen_0/m00_axis_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins trafficgen_0/m00_axis_aresetn] [get_bd_pins rst_ps7_0_50M/peripheral_aresetn]
+connect_bd_intf_net [get_bd_intf_pins trafficgen_0/M00_AXIS] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+connect_bd_net [get_bd_pins processing_system7_0/IRQ_F2P] [get_bd_pins axi_dma_0/s2mm_introut]
+save_bd_design
+Wrote  : </home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+make_wrapper -files [get_files /home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.srcs/sources_1/bd/design_1/design_1.bd] -top
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.050 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.044 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.035 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.100 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.050 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.044 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.035 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.100 . PS DDR interfaces might fail when entering negative DQS skew values. 
+Wrote  : </home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : /home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.gen/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+make_wrapper: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 9302.840 ; gain = 7.059 ; free physical = 164 ; free virtual = 6057
+add_files -norecurse /home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : </home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : /home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.gen/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block trafficgen_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_us .
+Exporting to file /home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File /home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.gen/sources_1/bd/design_1/synth/design_1.hwdef
+[Tue May 10 23:55:40 2022] Launched design_1_xbar_0_synth_1, design_1_processing_system7_0_0_synth_1, design_1_axi_dma_0_0_synth_1, design_1_trafficgen_0_0_synth_1, design_1_rst_ps7_0_50M_0_synth_1, design_1_auto_pc_1_synth_1, design_1_auto_pc_0_synth_1, design_1_auto_us_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_xbar_0_synth_1: /home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.runs/design_1_xbar_0_synth_1/runme.log
+design_1_processing_system7_0_0_synth_1: /home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.runs/design_1_processing_system7_0_0_synth_1/runme.log
+design_1_axi_dma_0_0_synth_1: /home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.runs/design_1_axi_dma_0_0_synth_1/runme.log
+design_1_trafficgen_0_0_synth_1: /home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.runs/design_1_trafficgen_0_0_synth_1/runme.log
+design_1_rst_ps7_0_50M_0_synth_1: /home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.runs/design_1_rst_ps7_0_50M_0_synth_1/runme.log
+design_1_auto_pc_1_synth_1: /home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.runs/design_1_auto_pc_1_synth_1/runme.log
+design_1_auto_pc_0_synth_1: /home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.runs/design_1_auto_pc_0_synth_1/runme.log
+design_1_auto_us_0_synth_1: /home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.runs/design_1_auto_us_0_synth_1/runme.log
+synth_1: /home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.runs/synth_1/runme.log
+[Tue May 10 23:55:40 2022] Launched impl_1...
+Run output will be captured here: /home/arieli/ece520/ece520-finalproject/trafficgen_dma/trafficgen_dma.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 9483.031 ; gain = 18.969 ; free physical = 147 ; free virtual = 5575
+write_hw_platform -fixed -include_bit -force -file /home/arieli/ece520/ece520-finalproject/trafficgen_dma/design_1_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: /home/arieli/ece520/ece520-finalproject/trafficgen_dma/design_1_wrapper.xsa ...
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Vivado 12-12464] The Hardware Platform can be used for Hardware
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: /home/arieli/ece520/ece520-finalproject/trafficgen_dma/design_1_wrapper.xsa
+INFO: [Hsi 55-2053] elapsed time for repository (/home/arieli/Documents/tools/Xilinx/Vivado/2021.2/data/embeddedsw) loading 0 seconds
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.

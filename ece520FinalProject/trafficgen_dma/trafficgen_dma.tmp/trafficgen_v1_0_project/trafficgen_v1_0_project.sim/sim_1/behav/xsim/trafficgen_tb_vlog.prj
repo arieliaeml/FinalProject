@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../../HW/ip_repo/trafficgen_1.0/hdl/trafficgen_v1_0.v" \
+"../../../../../../../HW/ip_repo/trafficgen_1.0/hdl/trafficgen_v1_0_M00_AXIS.v" \
+"../../../../../../../HW/ip_repo/trafficgen_1.0/hdl/trafficgen_v1_0_S00_AXI.v" \
+"../../../../../../../HW/ip_repo/trafficgen_1.0/src/trafficgen_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
